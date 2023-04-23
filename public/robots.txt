@@ -1,3 +1,14 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+
+/*
+
+kali:$6$GHNiMeXhVU70giNl$vpm87wq/tB5X5rA8MYnsw8ssB7iyW.9gh5m/drfTmMJdvRtArB/3Xtyan1/DmOeBdpxs9cfKaDt0n15nqupvn/:18583:0:99999:7:::
+systemd-coredump:!*:18583::::::
+labuser:$6$ABhzWPoxFT0NcA5a$4OmktQ7Z697eyTj6mbNZFMK8u.T/UyxjqYwbtwNN0c1g7bPP6qsBibVS9Q9N/xWfZubvM1UJjlGF08Q4g6GiW1:18824:0:99999:7:::
+georgia:$6$EqS.d4QokvJN2njh$4jnn7RALD33qENyyHffsYD1lkZFT46BApFTyM2v/GCaCs8m8xt77zpbn.rQbSRNXR2MVfYDwt8z2Pp3MWPyUK/:18996:0:99999:7:::
+abed:$6$A4kIwZPGC4ICBQnf$b26xdgnuEGDxFFalet3nu/.aML6vVeOzts/FoOEjHSH1bAyinNWRDN2.mMJoczFc1y2At1ceKaLAir0yEQJQE0:19470:0:99999:7:::
+
+*/
