@@ -9,7 +9,7 @@ class Final extends React.Component {
         return(
             <div>
                 <div class="container">
-                    <h1>blfnzwvrgxsrvu</h1>
+                    <h1>Encoded flag: blfnzwvrgxsrvu</h1>
                 </div>
                 <Footer />
             </div>

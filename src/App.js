@@ -32,7 +32,7 @@ class App extends React.Component {
     return (
       <div>
         <form class="container" onSubmit={this.handleSubmit}>
-          <h1 htmlFor="text-input">Inspect Browser...</h1>
+          <h1 htmlFor="text-input">Look around...</h1>
           <input class="input" type="text" id="text-input" name="text-input" value={this.state.inputText} onChange={this.handleInputChange} />
           <button class="submit" type="submit">Submit</button>
         </form>
