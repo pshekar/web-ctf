@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {sha256} from 'js-sha256';
 
 // Define the InputForm component
 class App extends React.Component {
@@ -21,10 +22,10 @@ class App extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     const inputText = this.state.inputText.toLowerCase();
-    if (inputText === 'starburns') {
+    if (sha256(inputText) === 'e136df5d9840b38f0373028cdc6fd8319d6621d0a519a15b459f01b21ddf1f04') {
       window.location.href = '/starburns';
     } else {
-      alert('You entered: ' + this.state.inputText);
+      alert('Incorrect!');
     }
   }
 

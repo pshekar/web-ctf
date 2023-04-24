@@ -5,4 +5,4 @@ COPY yarn.lock ./
 RUN yarn install --frozen-lockfile
 COPY . .
 EXPOSE 3000
-ENTRYPOINT ["yarn", "start", "&&", "tail", "-f", "/dev/null"]
+ENTRYPOINT yarn start && tail -f /dev/null

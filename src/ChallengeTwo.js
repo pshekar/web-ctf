@@ -1,4 +1,5 @@
 import React from 'react';
+import {sha256} from 'js-sha256';
 
 // script taken from https://www.danharmonsucks.com/shows/community/quotes/season-two/anthropology-101/
 
@@ -21,7 +22,7 @@ class Starburns extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
         const inputText = this.state.inputText.toLowerCase();
-        if (inputText === 'coolcoolcool') {
+        if (sha256(inputText) === 'c68c9bda75d01e39cef7b81eadaa44c0bdda0a432ad23ec28e8246c084df97fe') {
             window.location.href = '/final';
         } else {
             alert('Incorrect!');
@@ -32,10 +33,6 @@ class Starburns extends React.Component {
         return(
             <div>
                 <div>
-                    {/* <h1>The following is an exerpt of the script of Season 2 Episode 1 from the show Community. 
-                        However, there are a few words that have been added or removed from the original script.
-                        Use an online text comparison tool to find the differences and piece together the next clue.</h1>  */}
-
                     <form onSubmit={this.handleSubmit}>
                         <label htmlFor="text-input">Answer:</label>
                         <input type="text" id="text-input" name="text-input" value={this.state.inputText} onChange={this.handleInputChange} />
